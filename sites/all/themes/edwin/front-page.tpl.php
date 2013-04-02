@@ -1,7 +1,6 @@
 <?php
 // $Id: page.tpl.php,v 1.1.2.2.4.2 2011/01/11 01:08:49 dvessel Exp $
 ?>
-
 <div id="page" class="container-16 clearfix">
 
   <div id="site-header" class="clearfix">
