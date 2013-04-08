@@ -8,6 +8,7 @@ engine = phptemplate
 
 ; Stylesheets. Anything within the "framework" folder will be placed before all others.
 stylesheets[all][] = styles/framework/reset.css
+;stylesheets[all][] = styles/clear.css
 stylesheets[all][] = styles/framework/text.css
 stylesheets[all][] = styles/framework/960.css
 ;stylesheets[all][] = styles/framework/debug.css

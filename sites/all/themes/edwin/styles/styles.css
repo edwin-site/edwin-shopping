@@ -1,22 +1,30 @@
 /* $Id: styles.css,v 1.1.2.2.2.1 2011/01/11 01:08:49 dvessel Exp $ */
 
 h1#site-name {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
-
-#site-header,
-#site-subheader,
-#footer-region,
-.column,
-.node,
-.comment,
-.block {
-  margin-bottom: 1.5em;
+#site-header, #site-subheader, #footer-region, .column, .node, .comment, .block {
+	margin-bottom: 1.5em;
 }
-
-ul.main-menu,
-ul.secondary-menu {
-  display: block;
-  margin: 0;
-  padding: 0;
+ul.main-menu, ul.secondary-menu {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: none repeat scroll 0 0 #EDFFFA;
+	height: 100%;
+	min-width: 960px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+body, input, button, textarea, a {
+	color: #777777
+}
+a:hover {
+	color: #FFA9B9
+}
+body, input, button, textarea {
+	font-size: 12px;
+	line-height: 15px;
+	font-family: Arial, Helvetica, sans-serif;
 }
