@@ -61,6 +61,37 @@ body, input, button, textarea {
 	color:#ffffff;
 }
 
+.product-panel{
+	margin:0;
+	padding:0;
+	color:#777777;	
+}
+
+.product-panel .view-content  ul{
+	margin:0;
+	padding:0;	
+}
+.product-panel .view-content  ul li.product {
+    display: block;
+    margin: 0 10px 30px 0;
+    overflow: hidden;
+    position: relative;
+    vertical-align: top;
+	width:196px;
+	float:left;
+}
+.product-panel .view-content  ul li .views-field-field-dr-image img{
+		width:196px;
+		height:296px;
+}
+.product-panel .view-content  ul li .views-field-field-dr-image .views-label{
+	margin:0;
+	padding:5px 0;
+	 font-size: 14px;
+    font-weight: 400;
+	color:#777777;
+	display:block;
+}
 /* Footer section goes here */
 .footer {
 	margin: 0;
