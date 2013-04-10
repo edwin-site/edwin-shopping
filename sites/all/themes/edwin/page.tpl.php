@@ -44,7 +44,7 @@
   </div>
 
 
-  <div id="main" class="column <?php print ns('grid-16', $page['sidebar_first'], 4, $page['sidebar_second'], 3) . ' ' . ns('push-4', !$page['sidebar_first'], 4); ?>">
+  <div id="main" class="column <?php print ns('grid-12', $page['sidebar_first'], 3, $page['sidebar_second'], 3) . ' ' . ns('push-3', !$page['sidebar_first'], 3); ?>">
     <?php print $breadcrumb; ?>
     <?php print render($title_prefix); ?>
     <?php if ($title): ?>
@@ -65,7 +65,7 @@
   </div>
 
 <?php if ($page['sidebar_first']): ?>
-  <div id="sidebar-left" class="column sidebar region grid-4 <?php print ns('pull-12', $page['sidebar_second'], 3); ?>">
+  <div id="sidebar-left" class="column sidebar region grid-3 <?php print ns('pull-9', $page['sidebar_second'], 3); ?>">
     <?php print render($page['sidebar_first']); ?>
   </div>
 <?php endif; ?>
