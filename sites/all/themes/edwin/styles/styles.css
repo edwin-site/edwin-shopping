@@ -28,3 +28,26 @@ body, input, button, textarea {
 	line-height: 15px;
 	font-family: Arial, Helvetica, sans-serif;
 }
+.main-banner{
+	margin:0 0 20px 0;
+	padding:0;
+}
+.main-banner .static-wrapper .rotating-banner {
+	background-color:#f7f7f7;
+}
+.main-banner  .rb-slides{
+	padding:3px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;		
+	border:2px solid #cccccc;
+}
+
+.left-image{
+	background-color:#f00;
+}
+.layout-wrapper{
+	margin:0;
+	padding:10px;
+	background:url(../images/bg-pop.png) 0 0 repeat;
+}
