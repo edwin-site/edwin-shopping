@@ -1,5 +1,6 @@
 <?php
 // $Id: page.tpl.php,v 1.1.2.2.4.2 2011/01/11 01:08:49 dvessel Exp $
+global $base_url;
 ?>
 
 <div id="page" class="container-12 clearfix">
@@ -104,10 +105,10 @@
     <div class="grid-3 social">
       <h2>Get Social</h2>
       <ul>
-        <li><a href="#"><img src="<?php print $base_url; ?>images/ico-rss.png" alt="Get our RSS Feed" title="Get our RSS Feed" width="31" height="32" /></a></li>
-        <li><a href="#"><img src="images/ico-facebook.png" alt="See us on Facebook" title="See us on Facebook" width="31" height="32" /></a></li>
-        <li><a href="#"><img src="images/ico-twitter.png" alt="Follow Us on Twitter" title="Follow Us on Twitter" width="31" height="32" /></a></li>
-        <li><a href="#"><img src="images/ico-linkedin.png" alt="See our profile on Linked in" title="See our profile on Linked in" width="31" height="32" /></a></li>
+        <li><a href="#"><img src="<?php echo $base_url; ?>/sites/all/themes/edwin/images/ico-rss.png" alt="Get our RSS Feed" title="Get our RSS Feed" width="31" height="32" /></a></li>
+        <li><a href="#"><img src="<?php echo $base_url; ?>/sites/all/themes/edwin/images/ico-facebook.png" alt="See us on Facebook" title="See us on Facebook" width="31" height="32" /></a></li>
+        <li><a href="#"><img src="<?php echo $base_url; ?>/sites/all/themes/edwin/images/ico-twitter.png" alt="Follow Us on Twitter" title="Follow Us on Twitter" width="31" height="32" /></a></li>
+        <li><a href="#"><img src="<?php echo $base_url; ?>/sites/all/themes/edwin/images/ico-linkedin.png" alt="See our profile on Linked in" title="See our profile on Linked in" width="31" height="32" /></a></li>
       </ul>
     </div>
     <div class="clear"></div>
