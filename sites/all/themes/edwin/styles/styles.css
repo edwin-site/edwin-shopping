@@ -46,13 +46,11 @@ body, input, button, textarea {
 .main-banner .static-wrapper .rotating-banner {
 	background-color: #ffffff;
 }
-.main-banner .rb-slides {
 
+.main-banner .rb-slides {}
 
-}
-.left-image {
-	background-color: #f00;
-}
+.left-image {}
+
 .layout-wrapper {
 	margin: 0;
 	padding: 10px;
@@ -61,4 +59,144 @@ body, input, button, textarea {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	color:#ffffff;
+}
+
+/* Footer section goes here */
+.footer {
+	margin: 0;
+	padding: 20px 0 20px 0;
+	background: #605e5e;
+	-webkit-box-shadow: inset 0px 0px 10px 1px #424040;
+	box-shadow: inset 0px 0px 10px 1px #424040;
+	font-size: 13px;
+	line-height: 19px;
+}
+.inner-footer {
+	color: #ffffff;
+}
+.inner-footer h2 {
+	margin: 16px 0 10px 0;
+	padding: 0 0 0 0;
+	font-family: 'helvetics-neue', Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	line-height: 25px;
+	font-weight: normal;
+}
+.inner-footer p {
+	margin: 16px 0 10px 0;
+	padding: 0 0 0 0;
+	font-family: 'helvetics-neue', Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 19px;
+}
+.newsletter {
+	margin: 0;
+	padding: 10px 0 55px 0;
+}
+.newsletter input {
+	color: #333333;
+	font-size: 13px;
+	line-height: 16px;
+	-webkit-box-shadow: 0px 0px 10px 1px #424040;
+	box-shadow: 0px 0px 10px 1px #424040;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+}
+.newsletter input[type=text] {
+	margin: 0;
+	padding: 5px 10px;
+	width: 260px;
+	height: 22px;
+	float: left;
+	background: url(../images/bg-input-text.png) 0 0 repeat-x;
+}
+.newsletter input[type=submit] {
+	margin: 0 0 0 10px;
+	padding: 5px 10px;
+	width: 63px;
+	height: 32px;
+	float: left;
+	background: url(../images/bg-input-button.png) 0 0 repeat-x;
+	cursor: pointer;
+}
+.contact-panel {
+	margin: 0;
+	padding: 8px 0 8px 0;
+}
+.contact-panel ul {
+	margin: 0;
+	padding: 0;
+}
+.contact-panel ul li {
+	margin: 0;
+	padding: 10px 0 10px 35px;
+}
+.contact-panel ul li.phone {
+	background: url(../images/ico-phone.png) 0 2px no-repeat;
+}
+.contact-panel ul li.email {
+	background: url(../images/ico-email.png) 0 2px no-repeat;
+}
+.contact-panel ul li.address {
+	background: url(../images/ico-home.png) 0 2px no-repeat;
+}
+.social ul {
+	margin: 0;
+	padding: 0;
+}
+.social ul li {
+	margin: 0 6px 0 0;
+	padding: 0;
+	width: 31px;
+	height: 32px;
+	float: left;
+}
+.social ul li img {
+	width: 31px;
+	height: 32px;
+	opacity: 0.3;
+}
+.social ul li img:hover {
+	opacity: 9;
+	transition: opacity 1s;
+	-moz-transition: opacity 1s; /* Firefox 4 */
+	-webkit-transition: opacity 1s; /* Safari and Chrome */
+	-o-transition: opacity 1s; /* Opera */
+}
+.footer-links {
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 18px;
+}
+.footer-links ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.footer-links ul li {
+	margin: 0;
+	padding: 0;
+	float: left;
+	background: url(../images/footer-nav.png) right center no-repeat;
+	text-transform: uppercase;
+}
+.footer-links ul li a, .footer-links ul li a:visited {
+	margin: 0;
+	padding: 0 10px;
+	display: block;
+	color: #ffffff;
+	text-decoration: none;
+}
+.footer-links ul li a:hover {
+	color: #efefef;
+	text-decoration: none;
+}
+.footer-links ul li:last-child {
+	background: none;
+}
+.footer-links ul li:first-child a {
+	padding-left: 0;
 }
