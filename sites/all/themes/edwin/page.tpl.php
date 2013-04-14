@@ -5,7 +5,7 @@ global $base_url;
 
 <div id="page" class="container-12 clearfix">
 
-  <div id="site-header" class="clearfix">
+  <div id="site-header" class="clearfix"> 
     <div id="branding" class="grid-4 clearfix">
     <?php if ($linked_logo_img): ?>
       <span id="logo" class="grid-1 alpha"><?php print $linked_logo_img; ?></span>
@@ -30,9 +30,9 @@ global $base_url;
   <?php endif; ?>
   </div>
 
-  <div id="site-subheader" class="prefix-1 suffix-1 clearfix">
+  <div id="site-subheader" class="clearfix">
   <?php if ($page['highlighted']): ?>
-    <div id="highlighted" class="<?php print ns('grid-14', $page['header'], 7); ?>">
+    <div id="highlighted" class="<?php print ns('grid-12', $page['header'], 7); ?>">
       <?php print render($page['highlighted']); ?>
     </div>
   <?php endif; ?>
