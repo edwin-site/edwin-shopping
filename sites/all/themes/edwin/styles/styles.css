@@ -285,29 +285,58 @@ h1#page-title{ display:none; }
 	margin:0;
 	padding:0;
 }
-.main-navigation ul.nice-menu-down{
+.main-navigation .content ul.nice-menu-down{
 	margin:0;
 	padding:0;
 	list-style:none;
 } 
-.main-navigation ul.nice-menu-down li{
+.main-navigation .content ul.nice-menu-down li{
 	margin:0;
 	padding:0;
 	float:left;
-	background-color:none !important;
+	background:url(../images/main-nav-sep.png) right center no-repeat transparent !important; /* If drop down is need, remove this */
+
 }
-.main-navigation ul.nice-menu-down li a, .main-navigation ul.nice-menu-down li a:visited{
+#header-region ul.nice-menu li{
 	margin:0;
-	padding:5px 12px 5px 12px;
+	padding:0 10px;
+	border:none;
+
+}
+#header-region ul.nice-menu ul{
+	background:#ffffff;
+	top:26px !important;	
+}
+#header-region ul.nice-menu ul li{
+	margin:0;
+	padding:0;
+	font-size:13px;
+	font-weight:normal;
+	background-image:none !important;
+}
+#header-region ul.nice-menu-down li.menuparent.over{
+		background:url(../images/main-nav-sep.png) right center no-repeat #ffffff !important; 
+}
+#header-region ul.nice-menu ul li a, #header-region ul.nice-menu ul li a:visited{
+	float:none;
+ 
+}
+
+#header-region ul.nice-menu ul li a:hover{
+	background-color:#99fee2;
+}
+.main-navigation .content ul.nice-menu-down li a, .main-navigation  .content ul.nice-menu-down li a:visited{
+	margin:0;
+	padding:5px 15px 5px 12px;
 	float:left;
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:16px;
+	font-size:14px;
 	font-weight:bold;
 	text-transform:uppercase;
 	display:block;
 	text-decoration:none;
 }
-.main-navigation ul.nice-menu-down li a:hover{
+.main-navigation .content ul.nice-menu-down li a:hover{
 	text-decoration:none;
 }
 .top-right-links{
