@@ -80,6 +80,28 @@ body, input, button, textarea {
 	width:196px;
 	float:left;
 }
+.product-panel .view-content  ul li.product .views-field.views-field-title{
+	margin:0;
+	padding:3px 10px;
+	display:block;
+}
+.product-panel .view-content  ul li.product .views-field.views-field-title a{
+	text-decoration:none
+}
+.product-panel .view-content  ul li.product .views-field.views-field-field-dr-price{
+	margin:0;
+	padding:3px 10px;
+	display:block;
+	overflow:hidden;
+}
+.product-panel .view-content  ul li.product .views-field.views-field-field-dr-price .views-label{
+	font-weight:bold;
+	float:left;
+	margin:0 5px 0 0;
+}
+.product-panel .view-content  ul li.product .views-field.views-field-field-dr-price .field-content{
+	float:left;
+}
 .product-panel .view-content  ul li .views-field-field-dr-image img{
 		width:196px;
 		height:296px;
@@ -91,6 +113,14 @@ body, input, button, textarea {
     font-weight: 400;
 	color:#777777;
 	display:block;
+}
+.product-panel .view-content  ul li .views-field-field-dr-image .field-content,
+.product-panel .view-content  ul li .views-field-field-dr-image .field-content a,
+.product-panel .view-content  ul li .views-field-field-dr-image .field-content a img{
+	width:196px;
+	height:300px;
+	display:block;
+	overflow:hidden;
 }
 /* Footer section goes here */
 .footer {
