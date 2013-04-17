@@ -263,7 +263,6 @@ h1#page-title{ display:none; }
 #site-subheader .region-header{
 	margin:0;
 	padding:0;
-	overflow:hidden;
 }
 #site-subheader {
 	margin:0;
@@ -286,17 +285,18 @@ h1#page-title{ display:none; }
 	margin:0;
 	padding:0;
 }
-ul.main-nav{
+.main-navigation ul.nice-menu-down{
 	margin:0;
 	padding:0;
 	list-style:none;
 } 
-ul.main-nav li{
+.main-navigation ul.nice-menu-down li{
 	margin:0;
 	padding:0;
 	float:left;
+	background-color:none !important;
 }
-ul.main-nav li a, ul.main-nav li a:visited{
+.main-navigation ul.nice-menu-down li a, .main-navigation ul.nice-menu-down li a:visited{
 	margin:0;
 	padding:5px 12px 5px 12px;
 	float:left;
@@ -307,32 +307,38 @@ ul.main-nav li a, ul.main-nav li a:visited{
 	display:block;
 	text-decoration:none;
 }
-ul.main-nav li a:hover{
+.main-navigation ul.nice-menu-down li a:hover{
 	text-decoration:none;
 }
 .top-right-links{
 	margin:0;
 	padding:0;
 }
-.top-right-links ul{
+.top-right-links ul.nice-menu{
 	margin:0;
 	padding:0;
 	list-style:none;
 	float:right;
 }
-.top-right-links ul li{
+.top-right-links ul.nice-menu li{
 	margin:0;
 	padding:0;
 	float:left;
-	background:url(../images/main-nav.jpg) 0 center no-repeat;
+	background:url(../images/main-nav.jpg) 0 center no-repeat transparent !important;
+	border:none !important;
 }
-.top-right-links ul li:first-child{
-	background:none;
+.top-right-links ul.nice-menu li:first-child{
+	background:none !important;
 }
-.top-right-links ul li a{
+.top-right-links ul.nice-menu li a, .top-right-links ul.nice-menu li a:visited{
 	margin:0;
 	padding:0 10px;
 	font-size:10px;
 	float:left;
 	text-transform:uppercase;
+	color:#333333;
+	text-decoration:none;
+}
+.top-right-links ul.nice-menu li a:hover{
+	color:#666666;
 }
