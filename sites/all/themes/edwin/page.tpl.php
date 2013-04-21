@@ -7,18 +7,18 @@ global $base_url;
 
   <div id="site-header" class="clearfix"> 
     <div id="branding" class="grid-4 clearfix">
-    <?php if ($linked_logo_img): ?>
+    <?php if (isset ($linked_logo_img)): ?>
       <span id="logo" class="grid-1 alpha"><?php print $linked_logo_img; ?></span>
     <?php endif; ?>
-    <?php if ($linked_site_name): ?>
+    <?php if (isset ($linked_site_name)): ?>
       <h1 id="site-name" class="grid-3 omega"><?php print $linked_site_name; ?></h1>
     <?php endif; ?>
-    <?php if ($site_slogan): ?>
+    <?php if (isset ($site_slogan)): ?>
       <div id="site-slogan" class="grid-3 omega"><?php print $site_slogan; ?></div>
     <?php endif; ?>
     </div>
 
-  <?php if ($main_menu_links || $secondary_menu_links): ?>
+  <?php if (isset ($main_menu_links) || isset ($secondary_menu_links)): ?>
     <div id="site-menu" class="grid-12">
       <?php print $main_menu_links; ?>
       <?php print $secondary_menu_links; ?>
@@ -88,8 +88,8 @@ global $base_url;
       <h2>About Edwin Shopping</h2>
       <p>Lorem ipsum dolor sit amet, suas gubergren an duo, prima iisque ei sed. Cum eu adipisci repudiare neglegentur. Vix alii prodesset necessitatibus eu, feugait evertitur no cum. Cum ne appetere maluisset, noster aperiam similique vim eu, sit id posse deterruisset. </p>
       <div class="newsletter clearfix">
-        <input type="text" name="txt-newsletter" value="You can subscribe us for the updates here..." >
-        <input type="submit" name="btn-submit" value="join" />
+        <!--<input type="text" name="txt-newsletter" value="You can subscribe us for the updates here..." >
+        <input type="submit" name="btn-submit" value="join" /> -->
       </div>
     </div>
     <div class="grid-3">
@@ -114,12 +114,12 @@ global $base_url;
     <div class="clear"></div>
     <div class="grid-7 footer-links">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Experties</a></li>
-        <li><a href="#">Get a Free qoute</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">CONTACT US</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="dresses">Dresses</a></li>
+        <li><a href="accessories">Accessories</a></li>
+        <li><a href="bottoms">Bottoms</a></li>
+        <li><a href="shoes">Shoes</a></li>
+        <li><a href="tops">Tops</a></li>
       </ul>
     </div>
     <div class="grid-4 prefix-1 footer-links">Edwin Shopping. &copy; 2013-2015. All rights reserved.</div>
