@@ -21,7 +21,7 @@ body, input, button, textarea, a {
 	color: #777777
 }
 a:hover {
-	color: #FFA9B9
+	color: #F86072
 }
 body, input, button, textarea {
 	font-size: 12px;
@@ -274,7 +274,7 @@ h1#page-title{ display:none; }
 	font-size:16px;
 	font-weight:bold;
 	text-align:right;
-	color:#ffa9b9;
+	color:#F86072;
 	clear:both;
 }
 .free-shippiing p{
@@ -288,7 +288,7 @@ h1#page-title{ display:none; }
 	padding:0;
 	font-size:12px;
 	display:block;
-	color:#ffa9b9;	
+	color:#F86072;	
 }
 #site-subheader .region-header{
 	margin:0;
@@ -324,12 +324,12 @@ h1#page-title{ display:none; }
 	margin:0;
 	padding:0;
 	float:left;
-	background:url(../images/main-nav-sep.png) right center no-repeat transparent !important; /* If drop down is need, remove this */
+	background:transparent !important; 
 
 }
 #header-region ul.nice-menu li{
 	margin:0;
-	padding:0 10px;
+	padding:0;
 	border:none;
 
 }
@@ -345,26 +345,52 @@ h1#page-title{ display:none; }
 	background-image:none !important;
 }
 #header-region ul.nice-menu-down li.menuparent.over{
-		background:url(../images/main-nav-sep.png) right center no-repeat #ffffff !important; 
+		/*background:url(../images/main-nav-sep.png) right center no-repeat #ffffff !important; */
 }
 #header-region ul.nice-menu ul li a, #header-region ul.nice-menu ul li a:visited{
 	float:none;
  
 }
 
+#header-region ul.nice-menu a:hover,
 #header-region ul.nice-menu ul li a:hover{
-	background-color:#99fee2;
+	color:#F86072;
 }
-.main-navigation .content ul.nice-menu-down li a, .main-navigation  .content ul.nice-menu-down li a:visited{
+.main-navigation .content ul.nice-menu-down li a, 
+.main-navigation  .content ul.nice-menu-down li a:visited{
 	margin:0;
-	padding:5px 15px 5px 12px;
-	float:left;
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:14px;
-	font-weight:bold;
-	text-transform:uppercase;
-	display:block;
 	text-decoration:none;
+	font-size: 16px;
+    padding: 5px 13px 5px;
+    text-transform: uppercase;
+    z-index: 4;	
+	display: inline-block;
+	position: relative;
+	font-weight: 700;
+	line-height: 18px;
+	color: #000000
+}
+.main-navigation .content ul.nice-menu-down li ul{
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: -2px;
+	z-index: 3;
+	text-align: left;
+	font-size: 0;
+	background: #fff
+}
+.main-navigation .content ul.nice-menu-down li ul li {
+	display: list-item !important
+}
+.main-navigation .content ul.nice-menu-down li ul a {
+	display: list-item !important;
+	width: auto;
+	padding: 0 15px;
+	font-weight: 400;
+	font-size: 11px;
+	text-transform:none
 }
 .main-navigation .content ul.nice-menu-down li a:hover{
 	text-decoration:none;
@@ -400,4 +426,18 @@ h1#page-title{ display:none; }
 }
 .top-right-links ul.nice-menu li a:hover{
 	color:#666666;
+}
+#page{
+	background-color:#ffffff;
+}
+.logo-section{
+	margin-bottom:0 !important;
+}
+.page-intimates,
+.page-casual-dresses,
+.page-denim,
+.page-boots,
+.page-blouses{
+	margin:0;
+	padding:0;
 }
