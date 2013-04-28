@@ -146,6 +146,8 @@ body, input, button, textarea {
 	font-size: 22px;
 	line-height: 25px;
 	font-weight: normal;
+	text-shadow: 1px 0px 0px #000000;
+	filter: dropshadow(color=#000000, offx=1, offy=0);
 }
 .inner-footer p {
 	margin: 16px 0 10px 0;
@@ -153,6 +155,8 @@ body, input, button, textarea {
 	font-family: 'helvetics-neue', Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	line-height: 19px;
+	text-shadow: 1px 0px 0px #000000;
+	filter: dropshadow(color=#000000, offx=1, offy=0);
 }
 .newsletter {
 	margin: 0;
@@ -198,6 +202,8 @@ body, input, button, textarea {
 .contact-panel ul li {
 	margin: 0;
 	padding: 10px 0 10px 35px;
+	text-shadow: 1px 0px 0px #000000;
+	filter: dropshadow(color=#000000, offx=1, offy=0);
 }
 .contact-panel ul li.phone {
 	background: url(../images/ico-phone.png) 0 2px no-repeat;
@@ -235,6 +241,8 @@ body, input, button, textarea {
 	color: #ffffff;
 	font-size: 12px;
 	line-height: 18px;
+	text-shadow: 1px 0px 0px #000000;
+	filter: dropshadow(color=#000000, offx=1, offy=0);
 }
 .footer-links ul {
 	margin: 0;
@@ -247,6 +255,8 @@ body, input, button, textarea {
 	float: left;
 	background: url(../images/footer-nav.png) right center no-repeat;
 	text-transform: uppercase;
+	text-shadow: 1px 0px 0px #000000;
+	filter: dropshadow(color=#000000, offx=1, offy=0);
 }
 .footer-links ul li a, .footer-links ul li a:visited {
 	margin: 0;
@@ -542,7 +552,7 @@ h1#page-title {
 .breadcrumb a:hover {
 	background: #fff;
 }
-.breadcrumb a::after,  .breadcrumb a::before {
+.breadcrumb a::after, .breadcrumb a::before {
 	content: "";
 	position: absolute;
 	top: 50%;
@@ -564,11 +574,11 @@ h1#page-title {
 .breadcrumb a:hover::after {
 	border-left-color: #fff;
 }
-.breadcrumb a.current,  .breadcrumb a.current:hover {
+.breadcrumb a.current, .breadcrumb a.current:hover {
 	font-weight: bold;
 	background: none;
 }
-.breadcrumb .current::after,  .breadcrumb .current::before {
+.breadcrumb .current::after, .breadcrumb .current::before {
 	content: normal;
 }
 .view-filters {
@@ -592,12 +602,12 @@ h1#page-title {
 	list-style: none;
 }
 .dress-pager-div ul.pager li {
-	margin:0;
-	padding:0 5px;
+	margin: 0;
+	padding: 0 5px;
 	border-right: solid 1px #ccc;
 }
-.dress-pager-div ul.pager li.pager-last{
-	border:0;
+.dress-pager-div ul.pager li.pager-last {
+	border: 0;
 }
 .dress-pager-div ul.pager li, .dress-pager-div ul.pager li a {
 	display: block;
