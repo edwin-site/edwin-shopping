@@ -90,27 +90,47 @@ body, input, button, textarea {
 .product-panel .view-content ul li.product .views-field.views-field-title a {
 	text-decoration: none
 }
-.product-panel .view-content ul li.product .views-field.views-field-field-dr-price {
+.product-panel .view-content ul li.product .views-field.views-field-field-dr-price,
+.product-panel .view-content ul li.product .views-field.views-field-field-acc-price,
+.product-panel .view-content ul li.product .views-field.views-field-field-bot-price,
+.product-panel .view-content ul li.product .views-field.views-field-field-sh-price,
+.product-panel .view-content ul li.product .views-field.views-field-field-top-price{
 	margin: 0;
 	padding: 3px 10px;
 	display: block;
 	overflow: hidden;
 	background-color: #ffffff;
 }
-.product-panel .view-content ul li.product .views-field.views-field-field-dr-price .views-label {
+.product-panel .view-content ul li.product .views-field.views-field-field-dr-price .views-label,
+.product-panel .view-content ul li.product .views-field.views-field-field-acc-price .views-label,
+.product-panel .view-content ul li.product .views-field.views-field-field-bot-price .views-label,
+.product-panel .view-content ul li.product .views-field.views-field-field-sh-price .views-label,
+.product-panel .view-content ul li.product .views-field.views-field-field-top-price .views-label {
 	font-weight: bold;
 	float: left;
 	margin: 0 5px 0 0;
 }
-.product-panel .view-content ul li.product .views-field.views-field-field-dr-price .field-content {
+.product-panel .view-content ul li.product .views-field.views-field-field-dr-price .field-content,
+.product-panel .view-content ul li.product .views-field.views-field-field-acc-price .field-content,
+.product-panel .view-content ul li.product .views-field.views-field-field-bot-price .field-content,
+.product-panel .view-content ul li.product .views-field.views-field-field-sh-price .field-content,
+.product-panel .view-content ul li.product .views-field.views-field-field-top-price .field-content {
 	float: left;
 	background-image: #ffffff;
 }
-.product-panel .view-content ul li .views-field-field-dr-image img {
+.product-panel .view-content ul li .views-field-field-dr-image img,
+.product-panel .view-content ul li .views-field-field-acc-image img,
+.product-panel .view-content ul li .views-field-field-bot-image img,
+.product-panel .view-content ul li .views-field-field-sh-image img,
+.product-panel .view-content ul li .views-field-field-top-image img {
 	width: 190px;
 	height: 296px;
 }
-.product-panel .view-content ul li .views-field-field-dr-image .views-label {
+.product-panel .view-content ul li .views-field-field-dr-image .views-label,
+.product-panel .view-content ul li .views-field-field-acc-image .views-label,
+.product-panel .view-content ul li .views-field-field-bot-image .views-label,
+.product-panel .view-content ul li .views-field-field-sh-image .views-label,
+.product-panel .view-content ul li .views-field-field-top-image .views-label {
 	margin: 0;
 	padding: 4px 5px 8px 5px;
 	font-size: 13px;
@@ -120,7 +140,25 @@ body, input, button, textarea {
 	overflow: hidden;
 	background-color: #ffffff;
 }
-.product-panel .view-content ul li .views-field-field-dr-image .field-content, .product-panel .view-content ul li .views-field-field-dr-image .field-content a, .product-panel .view-content ul li .views-field-field-dr-image .field-content a img {
+.product-panel .view-content ul li .views-field-field-dr-image .field-content, 
+.product-panel .view-content ul li .views-field-field-dr-image .field-content a, 
+.product-panel .view-content ul li .views-field-field-dr-image .field-content a img,
+
+.product-panel .view-content ul li .views-field-field-acc-image .field-content,
+.product-panel .view-content ul li .views-field-field-acc-image .field-content a,
+.product-panel .view-content ul li .views-field-field-acc-image .field-content a img,
+
+.product-panel .view-content ul li .views-field-field-bot-image .field-content,
+.product-panel .view-content ul li .views-field-field-bot-image .field-content a,
+.product-panel .view-content ul li .views-field-field-bot-image .field-content a img,
+
+.product-panel .view-content ul li .views-field-field-sh-image .field-content,
+.product-panel .view-content ul li .views-field-field-sh-image .field-content a,
+.product-panel .view-content ul li .views-field-field-sh-image .field-content a img,
+
+.product-panel .view-content ul li .views-field-field-top-image .field-content,
+.product-panel .view-content ul li .views-field-field-top-image .field-content a,
+.product-panel .view-content ul li .views-field-field-top-image .field-content a img {
 	width: 190px;
 	height: 300px;
 	display: block;
@@ -585,7 +623,11 @@ h1#page-title {
 	float: left;
 	max-width: 57%;
 }
-.dress-pager-div {
+.dress-pager-div, 
+.accessories-pager-div,
+.bottom-pager-div,
+.tops-pager-div,
+.shoes-pager-div {
 	float: right;
 	max-width: 40%;
 }
@@ -596,29 +638,45 @@ h1#page-title {
 	display: block;
 	overflow: hidden;
 }
-.dress-pager-div ul.pager {
+ul.pager {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
-.dress-pager-div ul.pager li {
+ul.pager li {
 	margin: 0;
-	padding: 0 5px;
+	padding: 0 5px !important;
 	border-right: solid 1px #ccc;
 }
-.dress-pager-div ul.pager li.pager-last {
+ul.pager li.pager-last {
 	border: 0;
 }
-.dress-pager-div ul.pager li, .dress-pager-div ul.pager li a {
-	display: block;
+ul.pager li, ul.pager li a {
+	display: block !important;
 	float: left;
 	font-size: 10px;
 	line-height: 15px;
 	position: relative;
 }
-.dress-pager-div ul.pager li a, .dress-pager-div ul.pager li a:visited {
+ul.pager li a, ul.pager li a:visited {
 	padding: 0;
 }
-.dress-pager-div ul.pager li.pager-current a {
+ul.pager li.pager-current a {
 	font-weight: 700;
+}
+.view-empty {
+	margin: 0;
+	padding: 25px 0 25px 0;
+	clear: both;
+	overflow: hidden;
+	min-height: 400px;
+}
+.view-empty p {
+	margin: 0 auto;
+	width: 165px;
+	padding: 50px;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;
+	background: url(../images/content-not-found.png) 0 center no-repeat;
 }
