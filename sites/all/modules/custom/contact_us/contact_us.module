@@ -1,0 +1,50 @@
+<?php
+function contact_us_init() {
+}
+function contact_us_permission() {
+  return array(
+    'add_to_favorites' => array(
+      'title' => t('Add to Favorites'),
+      'description' => t('Add any Activity to Favorites'),
+    ),
+  );
+}
+function contact_us_menu()
+{
+  $menu = array();
+  $menu['contact-us'] = array(
+    'title' => t('Contact Us'),
+    'type' => MENU_CALLBACK,
+    'page callback' => 'contact_us_func',
+    'access callback' => true,
+  );
+  return $menu;
+}
+function contact_us_form()
+{
+  $form = array();
+  $form['name'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Username'),
+ //   '#default_value' => $_GET['search'],
+    '#size' => 30,
+    '#maxlength' => 128,
+  );
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Apply'),
+  );
+  $form['#method'] = 'POST';
+  return $form;
+}
+function contact_us_data() {
+  return drupal_get_form('contact_us_form');
+}
+function contact_us_func()
+{
+    $output = '';
+    $output.= drupal_render(contact_us_data());
+
+
+    return $output;
+}
