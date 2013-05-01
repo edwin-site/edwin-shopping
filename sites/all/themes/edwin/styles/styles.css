@@ -470,7 +470,7 @@ h1#page-title {
 	float: left;
 	width: 142px;
 }
-.product-panel .views-exposed-widgets .views-exposed-widget input[type=text] {
+.product-panel .views-exposed-widgets .views-exposed-widget input[type=text], .Login-section input[type=text],.Login-section input[type=password] {
 	margin: 0;
 	padding: 2px 5px;
 	height: 20px;
@@ -488,7 +488,7 @@ h1#page-title {
 	height: 26px;
 	color: #777777;
 }
-.product-panel .views-exposed-widgets .views-exposed-widget input[type=submit].form-submit {
+.product-panel .views-exposed-widgets .views-exposed-widget input[type=submit].form-submit, .Login-section input[type=submit] {
 	margin: 0 0 0 10px;
 	padding: 0 10px;
 	background-color: #f85f73;
@@ -672,4 +672,27 @@ ul.pager li.pager-current a {
 	cursor: pointer;
 	background: url(../images/btn-search.png) 0 0 no-repeat;
 	text-indent: -900px;
+}
+.Login-section{
+	margin:0 auto;
+	padding:0;
+	width:300px;
+}
+.Login-section h2{
+	display:none;
+}
+.Login-section form{
+	margin:0;
+	padding:0;
+}
+.Login-section .form-item{
+	overflow:hidden;
+}
+.Login-section .form-item label{
+	float:left;
+	width:100px;
+	line-height:26px;
+}
+.Login-section input[type=text],.Login-section input[type=password]{
+	width:150px;
 }
