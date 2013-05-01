@@ -694,5 +694,21 @@ ul.pager li.pager-current a {
 	line-height:26px;
 }
 .Login-section input[type=text],.Login-section input[type=password]{
-	width:150px;
+	width:185px;
+}
+.Login-section .item-list{
+	padding-left:100px;
+	font-size:11px;
+}
+.Login-section .item-list ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.Login-section .item-list ul li{
+	margin:0;
+	padding:0;
+}
+.Login-section #edit-actions input[type=submit]{
+	margin-left:100px
 }
