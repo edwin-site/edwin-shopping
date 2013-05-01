@@ -120,7 +120,7 @@ body, input, button, textarea {
 	overflow: hidden;
 	background-color: #ffffff;
 }
-.product-panel .view-content ul li .views-field-field-dr-image .field-content, .product-panel .view-content ul li .views-field-field-dr-image .field-content a, .product-panel .view-content ul li .views-field-field-dr-image .field-content a img,  .product-panel .view-content ul li .views-field-field-acc-image .field-content, .product-panel .view-content ul li .views-field-field-acc-image .field-content a, .product-panel .view-content ul li .views-field-field-acc-image .field-content a img,  .product-panel .view-content ul li .views-field-field-bot-image .field-content, .product-panel .view-content ul li .views-field-field-bot-image .field-content a, .product-panel .view-content ul li .views-field-field-bot-image .field-content a img,  .product-panel .view-content ul li .views-field-field-sh-image .field-content, .product-panel .view-content ul li .views-field-field-sh-image .field-content a, .product-panel .view-content ul li .views-field-field-sh-image .field-content a img,  .product-panel .view-content ul li .views-field-field-top-image .field-content, .product-panel .view-content ul li .views-field-field-top-image .field-content a, .product-panel .view-content ul li .views-field-field-top-image .field-content a img {
+.product-panel .view-content ul li .views-field-field-dr-image .field-content, .product-panel .view-content ul li .views-field-field-dr-image .field-content a, .product-panel .view-content ul li .views-field-field-dr-image .field-content a img, .product-panel .view-content ul li .views-field-field-acc-image .field-content, .product-panel .view-content ul li .views-field-field-acc-image .field-content a, .product-panel .view-content ul li .views-field-field-acc-image .field-content a img, .product-panel .view-content ul li .views-field-field-bot-image .field-content, .product-panel .view-content ul li .views-field-field-bot-image .field-content a, .product-panel .view-content ul li .views-field-field-bot-image .field-content a img, .product-panel .view-content ul li .views-field-field-sh-image .field-content, .product-panel .view-content ul li .views-field-field-sh-image .field-content a, .product-panel .view-content ul li .views-field-field-sh-image .field-content a img, .product-panel .view-content ul li .views-field-field-top-image .field-content, .product-panel .view-content ul li .views-field-field-top-image .field-content a, .product-panel .view-content ul li .views-field-field-top-image .field-content a img {
 	width: 190px;
 	height: 300px;
 	display: block;
@@ -470,7 +470,7 @@ h1#page-title {
 	float: left;
 	width: 142px;
 }
-.product-panel .views-exposed-widgets .views-exposed-widget input[type=text], .Login-section input[type=text],.Login-section input[type=password] {
+.product-panel .views-exposed-widgets .views-exposed-widget input[type=text], .Login-section input[type=text], .Login-section input[type=password], #contact-site-form input[type=text] {
 	margin: 0;
 	padding: 2px 5px;
 	height: 20px;
@@ -488,7 +488,7 @@ h1#page-title {
 	height: 26px;
 	color: #777777;
 }
-.product-panel .views-exposed-widgets .views-exposed-widget input[type=submit].form-submit, .Login-section input[type=submit] {
+.product-panel .views-exposed-widgets .views-exposed-widget input[type=submit].form-submit, .Login-section input[type=submit], #contact-site-form input[type=submit] {
 	margin: 0 0 0 10px;
 	padding: 0 10px;
 	background-color: #f85f73;
@@ -502,7 +502,7 @@ h1#page-title {
 	color: #ffffff;
 	cursor: pointer;
 }
-.product-panel .views-exposed-widgets .views-exposed-widget input[type=submit].form-submit:hover {
+.product-panel .views-exposed-widgets .views-exposed-widget input[type=submit].form-submit:hover, #contact-site-form input[type=submit]:hover, .Login-section #edit-actions input[type=submit]:hover {
 	background-color: #777777;
 	border: 1px solid #333333;
 	color: #ffffff;
@@ -673,42 +673,113 @@ ul.pager li.pager-current a {
 	background: url(../images/btn-search.png) 0 0 no-repeat;
 	text-indent: -900px;
 }
-.Login-section{
-	margin:0 auto;
-	padding:0;
+.Login-section {
+	margin: 0 auto;
+	padding: 0;
+	width: 300px;
+}
+.Login-section h2 {
+	display: none;
+}
+.Login-section form {
+	margin: 0;
+	padding: 0;
+}
+.Login-section .form-item {
+	overflow: hidden;
+}
+.Login-section .form-item label {
+	float: left;
+	width: 100px;
+	line-height: 26px;
+}
+.Login-section input[type=text], .Login-section input[type=password] {
+	width: 185px;
+}
+.Login-section .item-list {
+	padding-left: 100px;
+	font-size: 11px;
+}
+.Login-section .item-list ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.Login-section .item-list ul li {
+	margin: 0;
+	padding: 0;
+}
+.Login-section #edit-actions input[type=submit] {
+	margin-left: 100px;
+}
+.field-type-text-with-summary p {
+	text-align: center;
+}
+.page-contact {
+	margin: 0;
+	padding: 0;
+}
+.page-contact #block-system-main{
+	width:450px;
+	float:right;
+}
+#contact-site-form{
+	margin:0;
+}
+#contact-site-form label {
+	margin: 0;
+	padding: 5px 0 5px 0;
+	font-size: 15px;
+	font-weight: normal;
+}
+#contact-site-form input[type=text]{
 	width:300px;
 }
-.Login-section h2{
-	display:none;
+#contact-site-form textarea{
+	margin: 0;
+	padding: 2px 5px;
+	height: 118px;
+	border: 1px solid #777777;
+	line-height: 20px;
+	width: 412px;
+	color: #777777;
 }
-.Login-section form{
+#contact-site-form .grippie{
+	 display:none;
+}
+#contact-site-form .form-type-checkbox.form-item{
+	overflow:hidden
+}
+#contact-site-form input[type=checkbox]{
 	margin:0;
-	padding:0;
-}
-.Login-section .form-item{
-	overflow:hidden;
-}
-.Login-section .form-item label{
 	float:left;
-	width:100px;
-	line-height:26px;
 }
-.Login-section input[type=text],.Login-section input[type=password]{
-	width:185px;
-}
-.Login-section .item-list{
-	padding-left:100px;
-	font-size:11px;
-}
-.Login-section .item-list ul{
+#contact-site-form .form-type-checkbox label{
 	margin:0;
-	padding:0;
-	list-style:none;
+	padding:0 0 0 10px;
+	float:left;
 }
-.Login-section .item-list ul li{
+#contact-site-form #edit-actions input[type=submit]{
 	margin:0;
-	padding:0;
 }
-.Login-section #edit-actions input[type=submit]{
-	margin-left:100px
+.page-contact #main-content{
+	margin:0;
+	padding:20px 0 0 0;
+}
+.contact-us-map h2{
+	margin:10px 0 13px 0;
+}
+.contact-us-map .map{
+	width:450px;
+	height:295px;
+	background:url(../images/map.jpg) 0 0 no-repeat;
+	display:block;
+	border:3px solid #666666;
+}
+#contact-site-form .form-item{
+	padding:0 0 0 0;
+	margin:0 0 5px 0;
+}
+#contact-site-form .form-item:first-child{
+	margin-top:29px;
 }
