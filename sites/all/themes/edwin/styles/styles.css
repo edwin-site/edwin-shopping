@@ -723,6 +723,9 @@ ul.pager li.pager-current a {
 	width:450px;
 	float:right;
 }
+.page-contact #block-locationmap-image{
+    float: left;
+}
 #contact-site-form{
 	margin:0;
 }
