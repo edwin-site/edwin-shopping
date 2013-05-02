@@ -677,7 +677,8 @@ ul.pager li.pager-current a {
 .Login-section {
 	margin: 0 auto;
 	padding: 0;
-	width: 300px;
+/*	width: 300px;*/
+        float: right;
 }
 .Login-section h2 {
 	display: none;
