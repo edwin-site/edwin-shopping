@@ -502,7 +502,8 @@ h1#page-title {
 	color: #ffffff;
 	cursor: pointer;
 }
-.product-panel .views-exposed-widgets .views-exposed-widget input[type=submit].form-submit:hover, #contact-site-form input[type=submit]:hover, .Login-section #edit-actions input[type=submit]:hover {
+.product-panel .views-exposed-widgets .views-exposed-widget input[type=submit].form-submit:hover, #contact-site-form input[type=submit]:hover, .Login-section #edit-actions input[type=submit]:hover,
+.Login-section input[type=submit]:hover {
 	background-color: #777777;
 	border: 1px solid #333333;
 	color: #ffffff;
@@ -694,7 +695,7 @@ ul.pager li.pager-current a {
 	line-height: 26px;
 }
 .Login-section input[type=text], .Login-section input[type=password] {
-	width: 185px;
+	width: 185px !important;
 }
 .Login-section .item-list {
 	padding-left: 100px;
@@ -712,6 +713,42 @@ ul.pager li.pager-current a {
 .Login-section #edit-actions input[type=submit] {
 	margin-left: 100px;
 }
+.Login-section .description {
+	margin-left: 100px;
+}
+.Login-section #edit-actions--2 {
+	margin: 0;
+	padding: 0;
+	width: 100px;
+	float: left;
+}
+#fancy_login_form_contents {
+	padding: 15px 0px 15px 0px;
+}
+div#fancy_login_login_box {
+	position: relative;
+	width: 330px !important;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#fancy_login_close_button {
+	position: absolute;
+	padding: 3px 5px;
+	margin: 0;
+	top: 5px;
+	right: 5px;
+	background-color: #6de29f;
+	border: 1px solid #3ccf7b;
+	color: #ffffff;
+	font-size: 13px;
+	line-height:15px;
+	text-decoration: none;
+}
+#fancy_login_close_button:hover {
+	color: #999999;
+	border: 1px solid #999999;
+}
 .field-type-text-with-summary p {
 	text-align: center;
 }
@@ -719,15 +756,15 @@ ul.pager li.pager-current a {
 	margin: 0;
 	padding: 0;
 }
-.page-contact #block-system-main{
-	width:450px;
-	float:right;
+.page-contact #block-system-main {
+	width: 450px;
+	float: right;
 }
-.page-contact #block-locationmap-image{
-    float: left;
+.page-contact #block-locationmap-image {
+	float: left;
 }
-#contact-site-form{
-	margin:0;
+#contact-site-form {
+	margin: 0;
 }
 #contact-site-form label {
 	margin: 0;
@@ -735,10 +772,10 @@ ul.pager li.pager-current a {
 	font-size: 15px;
 	font-weight: normal;
 }
-#contact-site-form input[type=text]{
-	width:300px;
+#contact-site-form input[type=text] {
+	width: 300px;
 }
-#contact-site-form textarea{
+#contact-site-form textarea {
 	margin: 0;
 	padding: 2px 5px;
 	height: 118px;
@@ -747,42 +784,42 @@ ul.pager li.pager-current a {
 	width: 412px;
 	color: #777777;
 }
-#contact-site-form .grippie{
-	 display:none;
+#contact-site-form .grippie {
+	display: none;
 }
-#contact-site-form .form-type-checkbox.form-item{
-	overflow:hidden
+#contact-site-form .form-type-checkbox.form-item {
+	overflow: hidden
 }
-#contact-site-form input[type=checkbox]{
-	margin:0;
-	float:left;
+#contact-site-form input[type=checkbox] {
+	margin: 0;
+	float: left;
 }
-#contact-site-form .form-type-checkbox label{
-	margin:0;
-	padding:0 0 0 10px;
-	float:left;
+#contact-site-form .form-type-checkbox label {
+	margin: 0;
+	padding: 0 0 0 10px;
+	float: left;
 }
-#contact-site-form #edit-actions input[type=submit]{
-	margin:0;
+#contact-site-form #edit-actions input[type=submit] {
+	margin: 0;
 }
-.page-contact #main-content{
-	margin:0;
-	padding:20px 0 0 0;
+.page-contact #main-content {
+	margin: 0;
+	padding: 20px 0 0 0;
 }
-.contact-us-map h2{
-	margin:10px 0 13px 0;
+.contact-us-map h2 {
+	margin: 10px 0 13px 0;
 }
-.contact-us-map .map{
-	width:450px;
-	height:295px;
-	background:url(../images/map.jpg) 0 0 no-repeat;
-	display:block;
-	border:3px solid #666666;
+.contact-us-map .map {
+	width: 450px;
+	height: 295px;
+	background: url(../images/map.jpg) 0 0 no-repeat;
+	display: block;
+	border: 3px solid #666666;
 }
-#contact-site-form .form-item{
-	padding:0 0 0 0;
-	margin:0 0 5px 0;
+#contact-site-form .form-item {
+	padding: 0 0 0 0;
+	margin: 0 0 5px 0;
 }
-#contact-site-form .form-item:first-child{
-	margin-top:29px;
+#contact-site-form .form-item:first-child {
+	margin-top: 29px;
 }
